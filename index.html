@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rastreador de Despesas</title>
+  </head>
+  <body>
+    <h2>Rastreador de Despesas</h2>
+
+    <div class="container">
+      <h4>Sua carteira</h4>
+      <h1 id="balance">R$0,00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Renda</h4>
+          <p id="money-plus" class="money plus">+R$0,00</p>
+        </div>
+        <div>
+          <h4>Despesa</h4>
+          <p id="money-minus" class="money minus">-R$0,00</p>
+        </div>
+      </div>
+
+      <h3>Histórico</h3>
+      <ul id="list" class="list"></ul>
+
+      <h3>Adicionar nova transação</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Descrição</label>
+          <input type="text" id="text" placeholder="Insira o texto informativo..." />
+        </div>
+        <div class="form-control">
+          <label for="amount">Montante <br />
+            (valor negativo = despesa, valor positivo = renda)
+          </label>
+          <input type="number" id="amount" placeholder="Insira o valor..." />
+        </div>
+        <button class="btn">Adicionar transação</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
